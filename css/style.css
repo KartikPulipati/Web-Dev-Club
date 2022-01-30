@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* * {
+    box-sizing: border-box
+} */
+
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.info-text {
+    font-size: 30px;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 1.1em;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.nav-link {
+    font-display: flex;
+    margin-right: 30px;
+}
+
+.navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    color: transparent;
+    width: 0%;
+    content: '.';
+    height: 3px;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.bodyAbout {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    height: 150vh;
+    position: absolute;
+    background: rgb(143, 188, 143);
+}
+
+.bodyMain {
+    background-color: rgb(87, 98, 112);
+    width: 100%;
+    height: 150vh;
+    position: absolute;
+}
+
+body:before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+body.offcanvas-menu:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+p {
+    color: #b3b3b3;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+.heroAbout {
+    /* height: 200vh; */
+    width: 100%;
+    background: rgb(143, 188, 143);
+}
+
+.officerImg {
+    color: rgb(255, 255, 255);
+}
+
+.aboutContent {
+    color: rgb(255, 255, 255);
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+}
+
+.rowA {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.columnA {
+    flex: 100%;
+    max-width: 100%;
+}
+
+.column img {
+    vertical-align: middle;
+}
+
+.containerA {
+    position: relative;
+    width: 100%;
+}
+
+.imageA {
+    display: block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: white;
+}
+
+.containerA:hover .overlay {
+    opacity: 0.7;
+}
+
+img.imageA {
+    transition: transform 100ms ease-out;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+img.imageA:hover {
+    transform: scale(2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.footerText {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    /* padding-left: 250px; */
+    /* padding-right: 30px; */
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.social-icons:hover {
+    color: #fff !important;
+}
+
+.social-iconsA:hover {
+    color: silver !important;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 480px) {
+    .col-md-4 {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 1024px) {
+    .col-md-4 {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imageChange {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imageChange {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .font-reduce {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-link {
+        margin-right: 10px;
+    }
+}
+
+.aicon:hover {
+    text-decoration: none;
+}
